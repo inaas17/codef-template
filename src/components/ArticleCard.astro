@@ -22,12 +22,12 @@ const description =
   {
     content.frontmatter.image ? (
       <Fragment>
-        <figure class="pt-4 sm:pt-0 rounded">
+        <figure class="sm:pt-0 rounded">
           <img
             width="300"
             height="200"
             loading={lazyLoading ? "lazy" : "eager"}
-            class="m-2 max-w-[300px] max-h-[200px] aspect-video"
+            class="w-full md:!max-w-[250px] h-100"
             src={content.frontmatter.image}
             alt={
               content.frontmatter.imageDescription ?? content.frontmatter.title
@@ -38,7 +38,7 @@ const description =
     ) : null
   }
 
-  <div class="card-body">
+  <div class="card-body md:max-w-[400px]">
     <h2 class="card-title">{content.frontmatter.title}</h2>
     <p class="line-clamp-4 md:line-clamp-3">
       {description}
