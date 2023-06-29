@@ -1,7 +1,7 @@
 ---
 layout: "@layouts/ArticleLayout.astro"
 title: View my recent work
-date: 17 July 2022
+date: 29 June 2023
 image: /images/my-third-article/dipeka.jpg
 ---
 
