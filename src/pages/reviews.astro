@@ -1,5 +1,48 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
----
 
-<BaseLayout><p>Reviews</p></BaseLayout>
+---
+<BaseLayout><p><style>
+  .review-container {
+    background-color: #b4eeb4;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .review-title {
+    font-size: 24px;
+    color: #6e3667;
+    margin-bottom: 10px;
+  }
+
+  .review-text {
+    font-size: 18px;
+    color: #6e3667;
+    margin-bottom: 10px;
+  }
+
+  .review-author {
+    font-size: 16px;
+    color: #6e3667;
+  }
+</style>
+  <h1 style="color: #6e3667; text-align: center;">Customer Reviews</h1>
+  <div class="review-container">
+    <h2 class="review-title">Review 1</h2>
+    <p class="review-text">Insert Review</p>
+    <p class="review-author">- Insert name</p>
+  </div>
+  <div class="review-container">
+    <h2 class="review-title">Review 2</h2>
+    <p class="review-text">Insert Review</p>
+    <p class="review-author">- Insert name</p>
+  </div>
+  <div class="review-container">
+    <h2 class="review-title">Review 3</h2>
+    <p class="review-text">Insert Review</p>
+    <p class="review-author">- Insert name</p>
+  </div>
+</BaseLayout>
+
+</p></BaseLayout>
+
