@@ -2,51 +2,55 @@
 import BaseLayout from "@layouts/BaseLayout.astro";
 ---
 
-<BaseLayout><p><!DOCTYPE html>
-<html>
-<head>
-  <title>Contact Details</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-  <style>
-    .contact-container {
-      max-width: 400px;
-      margin: 0 auto;
-    }
-    .contact-item {
-      margin-bottom: 10px;
-      display: flex;
-      align-items: center;
-    }
-    .contact-label {
-      font-weight: bold;
-      margin-right: 5px;
-    }
-    .contact-icon {
-      margin-right: 5px;
-    }
-  </style>
-</head>
-<body>
+<BaseLayout><p><style>
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0 40px 0; /* Updated margin */
+    padding-top: 5px; /* Added padding */
+  }
+
+  .contact-icon {
+    font-size: 48px;
+    color: #6e3667;
+    margin-bottom: 10px;
+  }
+
+  .contact-title {
+    font-size: 24px;
+    color: #6e3667;
+    margin-bottom: 10px;
+  }
+  .contact-details {
+    font-size: 18px;
+    color: #6e3667;
+    margin-bottom: 10px;
+  }
+</style>
   <div class="contact-container">
-    <div class="contact-item">
-      <i class="fas fa-user contact-icon"></i>
-      <span class="contact-label">Name:</span> John Doe
+    <h1 style="color: #6e3667; font-size: 36px; margin-bottom: 10px;">Contact Me</h1>
+    <p style="color: #6e3667; font-size: 18px;">Feel free to reach out to me, I'd love to hear from you!</p>
+  </div>
+  <div class="contact-container">
+    <div>
+      <i class="contact-icon fas fa-envelope"></i>
+      <h2 class="contact-title">Email</h2>
+      <p class="contact-details">inaas1710@gmail.com</p>
     </div>
-    <div class="contact-item">
-      <i class="fas fa-envelope contact-icon"></i>
-      <span class="contact-label">Email:</span> john@example.com
+    <div>
+      <i class="contact-icon fas fa-phone"></i>
+      <h2 class="contact-title">Phone</h2>
+      <p class="contact-details">+44 7419777300</p>
     </div>
-    <div class="contact-item">
-      <i class="fas fa-phone contact-icon"></i>
-      <span class="contact-label">Phone:</span> +1 123-456-7890
-    </div>
-    <div class="contact-item">
-      <i class="fas fa-map-marker-alt contact-icon"></i>
-      <span class="contact-label">Address:</span> 123 Main Street, City, Country
+    <div>
+      <i class="contact-icon fas fa-map-marker-alt"></i>
+      <h2 class="contact-title">Address</h2>
+      <p class="contact-details">Insert address</p>
     </div>
   </div>
-</body>
-</html>
-</p></BaseLayout>
+</BaseLayout></p></BaseLayout>
 
 

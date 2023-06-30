@@ -2,4 +2,89 @@
 import BaseLayout from "@layouts/BaseLayout.astro";
 ---
 
-<BaseLayout><p>bookings page</p></BaseLayout>
+<BaseLayout><p><style>
+  .booking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 40px 0;
+  }
+
+  .booking-form {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+
+  .booking-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #6e3667;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .booking-form input,
+  .booking-form select,
+  .booking-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+
+  .booking-form button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: #6e3667;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+
+  .booking-form button:hover {
+    background-color: #562e58;
+  }
+</style>
+
+  <div class="booking-container">
+    <h1 style="color: #6e3667; font-size: 36px; margin-bottom: 10px;">Book a Photo Session</h1>
+    <p style="color: #6e3667; font-size: 18px;">Fill out the form below to make a booking.</p>
+
+    <form class="booking-form" action="/submit-booking" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="session">Session Type</label>
+      <select id="session" name="session" required>
+        <option value="">Select Session Type</option>
+        <option value="portrait">Portrait</option>
+        <option value="wedding">Wedding</option>
+        <option value="family">Family</option>
+      </select>
+
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Submit Booking</button>
+    </form>
+  </div>
+</BaseLayout></p></BaseLayout>
