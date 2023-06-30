@@ -10,187 +10,222 @@ const posts = sortDateDescending(
 ---
 
 <BaseLayout title="Home" activeLink="home">
-<html>
-<head>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
+	<html>
+		<head>
+			<style>
+				body {
+					margin: 0;
+					padding: 0;
+				}
 
-    .sidebar {
-      background-color: #9ac5a1;
-      color: white;
-      width: 90px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      padding: 20px;
-    }
+				.sidebar {
+					background-color: #9ac5a1;
+					color: white;
+					width: 90px;
+					position: fixed;
+					top: 0;
+					left: 0;
+					height: 100%;
+					padding: 20px;
+				}
 
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-	  padding-left: 1px;
-    }
+				ul {
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					padding-left: 1px;
+				}
 
-    li {
-      margin-bottom: 10px;
-    }
+				li {
+					margin-bottom: 10px;
+				}
 
-    a {
-      color: #6565bf;
-      text-decoration: none;
-      padding: 1px;
-	  margin-left: 1px;
-    }
+				a {
+					color: #6565bf;
+					text-decoration: none;
+					padding: 1px;
+					margin-left: 1px;
+				}
 
-    a:hover {
-      background-color: #555;
-    }
+				a:hover {
+					background-color: #555;
+				}
 
-    .content {
-      margin-left: 90px;
-      padding: 20px;
-    }
-  </style>
-</head>
-  <body>
-  <div class="sidebar">
-      <ul>
-        <li><a href="https://main--lastingimpressions.netlify.app/">Home</a></li>
-        <li><a href="https://lastingimpressions.netlify.app/gallery/">Gallery</a></li>
-        <li><a href="https://lastingimpressions.netlify.app/blog/">Blog</a></li>
-        <li><a href="https://lastingimpressions.netlify.app/vlogs/">Vlogs</a></li>
-        <li><a href="https://lastingimpressions.netlify.app/shop/">Shop</a></li>
-        <li><a href="https://lastingimpressions.netlify.app/reviews/">Reviews</a></li>
-        <li><a href="https://lastingimpressions.netlify.app/bookings/">Bookings</a></li>
-        <li><a href="https://lastingimpressions.netlify.app/contact/">Contact</a></li>
-      </ul>
-    </div>
-
-  <div class="content">
+				.content {
+					margin-left: 90px;
+					padding: 20px;
+				}
+			</style>
+		</head>
+		<body>
+			<div class="sidebar">
+				<ul>
+					<li>
+						<a href="https://main--lastingimpressions.netlify.app/"
+							>Home</a>
+					</li>
+					<li>
+						<a
+							href="https://lastingimpressions.netlify.app/gallery/"
+							>Gallery</a>
+					</li>
+					<li>
+						<a href="https://lastingimpressions.netlify.app/blog/"
+							>Blog</a>
+					</li>
+					<li>
+						<a href="https://lastingimpressions.netlify.app/vlogs/"
+							>Vlogs</a>
+					</li>
+					<li>
+						<a href="https://lastingimpressions.netlify.app/shop/"
+							>Shop</a>
+					</li>
+					<li>
+						<a
+							href="https://lastingimpressions.netlify.app/reviews/"
+							>Reviews</a>
+					</li>
+					<li>
+						<a
+							href="https://lastingimpressions.netlify.app/bookings/"
+							>Bookings</a>
+					</li>
+					<li>
+						<a
+							href="https://lastingimpressions.netlify.app/contact/"
+							>Contact</a>
+					</li>
+				</ul>
+			</div>
+<div class="content">
     <!-- Rest of your website content goes here -->
   </div>
 </body>
 </html>
-	<section
-		class="flex flex-col sm:flex-row flex-wrap justify-center max-w-[90%] w-[52rem] mx-auto gap-12 mb-48"
-	>
-		<img
-			width="200"
-			height="200"
-			src="images/portrait 1.jpg"
-			alt="avatar"
-			class="rounded-md h-fit self-center justify-self-center"
-		/>
-		<img
-			width="200"
-			height="200"
-			src="images/samayah.jpg"
-			alt="avatar"
-			class="rounded-md h-fit self-center justify-self-center"
-		/>
-		<img
-			width="200"
-			height="200"
-			src="images/cinema.jpg"
-			alt="avatar"
-			class="rounded-md h-fit self-center justify-self-center"
-		/>
-		<img
-			width="100"
-			height="100"
-			src="public/images/maryam.JPG"
-			alt="avatar"
-			class="rounded-md h-fit self-center justify-self-center"
-		/>
-		<img
-			width="100"
-			height="100"
-			src="public/images/ds2.jpeg"
-			alt="avatar"
-			class="rounded-md h-fit self-center justify-self-center"
-		/>
-		<img
-			width="95"
-			height="95"
-			src="public/images/meerab.jpg"
-			alt="avatar"
-			class="rounded-md h-fit self-center justify-self-center"
-		/>
-		<div class="flex flex-col flex-wrap flex-grow">
-			<h1
-				style="--tw-gradient-to: #bab1e5"
-				class="text-center bg-gradient-to-r from-green-300 bg-clip-text text-transparent text-5xl mb-[0.7em] font-serif pb-1"
-			>
-				Welcome to lasting impressions photography
-			</h1>
-			<p class="text-center">
-				Hi my name's Inaas and this is a page dedicated to my
-				photography. This page features my work, including both my photos and vlogs. I also take bookings for a range of events and you can find slots and details under my booking tab.
-			</p>
-			<div class="flex flex-wrap justify-center gap-5 mt-4">
-				<a
-					class="w-8 h-8 flex scale-1 hover:scale-125 transition-[scale] justify-center relative"
-					href="https://www.instagram.com/lastingimpressions_17/"
-					target="_blank"
-					rel="noreferrer noopener"
+				<section
+					class="flex flex-col sm:flex-row flex-wrap justify-center max-w-[90%] w-[52rem] mx-auto gap-12 mb-48"
 				>
-					<span class="sr-only">Link to my YouTube channel</span>
 					<img
-						crossorigin="anonymous"
-						src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1280px-Instagram_logo_2016.svg.png?20210403190622"
-						alt="undefined"
-						width="32"
-						height="32"
+						width="200"
+						height="200"
+						src="images/portrait 1.jpg"
+						alt="avatar"
+						class="rounded-md h-fit self-center justify-self-center"
 					/>
-				</a>
-				<a
-					class="w-8 h-8 flex scale-1 hover:scale-125 transition-[scale] justify-center"
-					href="https://www.tiktok.com/@inaas_17?lang=en"
-					target="_blank"
-					rel="noreferrer noopener"
-				>
-					<span class="sr-only">Link to my TikTok</span>
-					<svg
-						fill="#000000"
-						viewBox="0 0 512 512"
-						id="icons"
-						xmlns="http://www.w3.org/2000/svg"
-						><path
-							d="M412.19,118.66a109.27,109.27,0,0,1-9.45-5.5,132.87,132.87,0,0,1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14,23.9,350,16,350.13,16H267.69V334.78c0,4.28,0,8.51-.18,12.69,0,.52-.05,1-.08,1.56,0,.23,0,.47-.05.71,0,.06,0,.12,0,.18a70,70,0,0,1-35.22,55.56,68.8,68.8,0,0,1-34.11,9c-38.41,0-69.54-31.32-69.54-70s31.13-70,69.54-70a68.9,68.9,0,0,1,21.41,3.39l.1-83.94a153.14,153.14,0,0,0-118,34.52,161.79,161.79,0,0,0-35.3,43.53c-3.48,6-16.61,30.11-18.2,69.24-1,22.21,5.67,45.22,8.85,54.73v.2c2,5.6,9.75,24.71,22.38,40.82A167.53,167.53,0,0,0,115,470.66v-.2l.2.2C155.11,497.78,199.36,496,199.36,496c7.66-.31,33.32,0,62.46-13.81,32.32-15.31,50.72-38.12,50.72-38.12a158.46,158.46,0,0,0,27.64-45.93c7.46-19.61,9.95-43.13,9.95-52.53V176.49c1,.6,14.32,9.41,14.32,9.41s19.19,12.3,49.13,20.31c21.48,5.7,50.42,6.9,50.42,6.9V131.27C453.86,132.37,433.27,129.17,412.19,118.66Z"
-						></path></svg
-					>
-				</a>
-				<a
-					class="w-8 h-8 flex scale-1 hover:scale-125 transition-[scale] justify-center"
-					href="https://www.linkedin.com/in/inaas-asad-181036241/"
-					target="_blank"
-					rel="noreferrer noopener"
-				>
-					<span class="sr-only">Link to my LinkedIn</span>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 448 512"
-						fill="#0e76a8"
-					>
-						<path
-							d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-						></path></svg
-					>
-				</a>
+					<img
+						width="200"
+						height="200"
+						src="images/samayah.jpg"
+						alt="avatar"
+						class="rounded-md h-fit self-center justify-self-center"
+					/>
+					<img
+						width="200"
+						height="200"
+						src="images/cinema.jpg"
+						alt="avatar"
+						class="rounded-md h-fit self-center justify-self-center"
+					/>
+					<img
+						width="100"
+						height="100"
+						src="public/images/maryam.JPG"
+						alt="avatar"
+						class="rounded-md h-fit self-center justify-self-center"
+					/>
+					<img
+						width="100"
+						height="100"
+						src="public/images/ds2.jpeg"
+						alt="avatar"
+						class="rounded-md h-fit self-center justify-self-center"
+					/>
+					<img
+						width="95"
+						height="95"
+						src="public/images/meerab.jpg"
+						alt="avatar"
+						class="rounded-md h-fit self-center justify-self-center"
+					/>
+					<div class="flex flex-col flex-wrap flex-grow">
+						<h1
+							style="--tw-gradient-to: #bab1e5"
+							class="text-center bg-gradient-to-r from-green-300 bg-clip-text text-transparent text-5xl mb-[0.7em] font-serif pb-1"
+						>
+							Welcome to lasting impressions photography
+						</h1>
+						<p class="text-center">
+							Hi my name's Inaas and this is a page dedicated to
+							my photography. This page features my work,
+							including both my photos and vlogs. I also take
+							bookings for a range of events and you can find
+							slots and details under my booking tab.
+						</p>
+						<div class="flex flex-wrap justify-center gap-5 mt-4">
+							<a
+								class="w-8 h-8 flex scale-1 hover:scale-125 transition-[scale] justify-center relative"
+								href="https://www.instagram.com/lastingimpressions_17/"
+								target="_blank"
+								rel="noreferrer noopener"
+							>
+								<span class="sr-only"
+									>Link to my YouTube channel</span
+								>
+								<img
+									crossorigin="anonymous"
+									src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1280px-Instagram_logo_2016.svg.png?20210403190622"
+									alt="undefined"
+									width="32"
+									height="32"
+								/>
+							</a>
+							<a
+								class="w-8 h-8 flex scale-1 hover:scale-125 transition-[scale] justify-center"
+								href="https://www.tiktok.com/@inaas_17?lang=en"
+								target="_blank"
+								rel="noreferrer noopener"
+							>
+								<span class="sr-only">Link to my TikTok</span>
+								<svg
+									fill="#000000"
+									viewBox="0 0 512 512"
+									id="icons"
+									xmlns="http://www.w3.org/2000/svg"
+									><path
+										d="M412.19,118.66a109.27,109.27,0,0,1-9.45-5.5,132.87,132.87,0,0,1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14,23.9,350,16,350.13,16H267.69V334.78c0,4.28,0,8.51-.18,12.69,0,.52-.05,1-.08,1.56,0,.23,0,.47-.05.71,0,.06,0,.12,0,.18a70,70,0,0,1-35.22,55.56,68.8,68.8,0,0,1-34.11,9c-38.41,0-69.54-31.32-69.54-70s31.13-70,69.54-70a68.9,68.9,0,0,1,21.41,3.39l.1-83.94a153.14,153.14,0,0,0-118,34.52,161.79,161.79,0,0,0-35.3,43.53c-3.48,6-16.61,30.11-18.2,69.24-1,22.21,5.67,45.22,8.85,54.73v.2c2,5.6,9.75,24.71,22.38,40.82A167.53,167.53,0,0,0,115,470.66v-.2l.2.2C155.11,497.78,199.36,496,199.36,496c7.66-.31,33.32,0,62.46-13.81,32.32-15.31,50.72-38.12,50.72-38.12a158.46,158.46,0,0,0,27.64-45.93c7.46-19.61,9.95-43.13,9.95-52.53V176.49c1,.6,14.32,9.41,14.32,9.41s19.19,12.3,49.13,20.31c21.48,5.7,50.42,6.9,50.42,6.9V131.27C453.86,132.37,433.27,129.17,412.19,118.66Z"
+									></path></svg
+								>
+							</a>
+							<a
+								class="w-8 h-8 flex scale-1 hover:scale-125 transition-[scale] justify-center"
+								href="https://www.linkedin.com/in/inaas-asad-181036241/"
+								target="_blank"
+								rel="noreferrer noopener"
+							>
+								<span class="sr-only">Link to my LinkedIn</span>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 448 512"
+									fill="#0e76a8"
+								>
+									<path
+										d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+									></path></svg
+								>
+							</a>
+						</div>
+					</div>
+				</section>
 			</div>
-		</div>
-	</section>
+		</body>
+	</html>
 
 	<section>
 		<h2
 			class="mx-auto text-center mb-8 bg-gradient-orange text-transparent bg-clip-text text-4xl border-b-2 border-red-300 font-semibold w-fit"
 		>
-			Featured Articles
+			Sections
 		</h2>
 
 		<div class="flex flex-wrap flex-col justify-center gap-12">

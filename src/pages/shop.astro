@@ -2,5 +2,74 @@
 import BaseLayout from "@layouts/BaseLayout.astro";
 ---
 
-<BaseLayout><p>this is my shop</p></BaseLayout>
+<BaseLayout><p>
+
+<style>
+  .shop-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 40px 0;
+  }
+
+  .photo-card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-bottom: 30px;
+  }
+
+  .photo-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .photo-card h2 {
+    font-size: 20px;
+    color: #6e3667;
+    margin-bottom: 10px;
+  }
+
+  .photo-card p {
+    color: #6e3667;
+    margin-bottom: 10px;
+  }
+
+  .photo-card button {
+    padding: 10px 20px;
+    background-color: #6e3667;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .photo-card button:hover {
+    background-color: #562e58;
+  }
+</style>
+
+  <div class="shop-container">
+    <h1 style="color: #6e3667; font-size: 36px; margin-bottom: 10px;">Shop Photos</h1>
+    <p style="color: #6e3667; font-size: 18px;">Browse and buy my collection of fun and creative photos.</p>
+
+    <div class="photo-card">
+      <img src="/path/to/photo1.jpg" alt="Photo 1">
+      <h2>Photo Title</h2>
+      <p>Price: £10</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="photo-card">
+      <img src="/path/to/photo2.jpg" alt="Photo 2">
+      <h2>Photo Title</h2>
+      <p>Price: £15</p>
+      <button>Add to Cart</button>
+</p></BaseLayout>
 
