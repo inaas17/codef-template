@@ -2,4 +2,51 @@
 import BaseLayout from "@layouts/BaseLayout.astro";
 ---
 
-<BaseLayout><p>contact details</p></BaseLayout>
+<BaseLayout><p><!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Details</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <style>
+    .contact-container {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .contact-item {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+    .contact-label {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    .contact-icon {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="contact-container">
+    <div class="contact-item">
+      <i class="fas fa-user contact-icon"></i>
+      <span class="contact-label">Name:</span> John Doe
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-envelope contact-icon"></i>
+      <span class="contact-label">Email:</span> john@example.com
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-phone contact-icon"></i>
+      <span class="contact-label">Phone:</span> +1 123-456-7890
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-map-marker-alt contact-icon"></i>
+      <span class="contact-label">Address:</span> 123 Main Street, City, Country
+    </div>
+  </div>
+</body>
+</html>
+</p></BaseLayout>
+
+
